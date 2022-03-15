@@ -1,10 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src",
+    "experimentalDecorators": true,
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
+    ],
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,6 +29,13 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "./src/**/*",
+    "index.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
   ]
 }

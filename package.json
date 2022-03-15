@@ -22,6 +22,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint --fix \"src/**/*.+(js|jsx)\"",
+    "format": "prettier --write \"src/**/*.+(js|jsx)\"",
+    "precommit": "lint-staged",
     "build:widget": "parcel build src/index.tsx --no-source-maps -d docs"
   },
   "eslintConfig": {
@@ -43,6 +47,14 @@
     ]
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "lint-staged": "^12.3.5",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.5.1"
   }
 }

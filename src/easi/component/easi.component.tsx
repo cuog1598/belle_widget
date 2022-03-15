@@ -3,7 +3,6 @@ import React from "react";
 interface ComponentProps {
   users: any[];
 }
-
 type Props = ComponentProps;
 
 const Easi: React.FunctionComponent<Props> = ({ users }) => {

@@ -24,7 +24,7 @@ const App: React.FunctionComponent<Props> = ({ domElement }) => {
       .then((response) => response.json())
       .then((res) => setUsers(res))
       .catch((ex) => {
-        console.log(ex);
+        // console.log(ex);
       });
   };
 
